@@ -1,0 +1,913 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1020">
+
+  <title>Ben Akbari | Computer Science & Technology</title>
+  <meta name="description" content="The professional portfolio of Ben Akbari, a Computer Science and Mathematics educator exploring programming, AI, STEAM, and educational technology.">
+
+  <style>
+    :root {
+      --bg: #0b1020;
+      --surface: #111a2e;
+      --surface-light: #18243b;
+      --text: #f1f5f9;
+      --muted: #a0aec0;
+      --accent: #67e8f9;
+      --purple: #a78bfa;
+      --border: rgba(148, 163, 184, 0.17);
+      --max-width: 1120px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 85px;
+    }
+
+    body {
+      font-family: Inter, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button, a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    .container {
+      width: min(90%, var(--max-width));
+      margin: 0 auto;
+    }
+
+    .accent {
+      color: var(--accent);
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .section {
+      padding: 100px 0;
+    }
+
+    .section-heading {
+      margin-bottom: 45px;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.2;
+      margin-top: 10px;
+      letter-spacing: -1px;
+    }
+
+    .section-intro {
+      max-width: 650px;
+      color: var(--muted);
+      margin-top: 15px;
+    }
+
+    /* Navigation */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(11, 16, 32, 0.9);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(16px);
+    }
+
+    nav {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .logo {
+      font-size: 1.2rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+
+    .logo span {
+      color: var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      font-size: 0.92rem;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    .menu-toggle {
+      display: none;
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 6px 11px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    /* Hero */
+
+    .hero {
+      min-height: 78vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 440px;
+      height: 440px;
+      right: -100px;
+      top: 40px;
+      background: radial-gradient(
+        circle, rgba(103, 232, 249, 0.12), transparent 70%
+      );
+      pointer-events: none;
+    }
+
+    .hero-content {
+      max-width: 800px;
+      padding: 100px 0;
+      position: relative;
+    }
+
+    .availability {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 7px 13px;
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin-bottom: 28px;
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #4ade80;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.8rem, 7vw, 5.7rem);
+      line-height: 1.08;
+      letter-spacing: -3px;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 .gradient {
+      background: linear-gradient(100deg, var(--accent), var(--purple));
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+
+    .hero-description {
+      color: var(--muted);
+      font-size: 1.12rem;
+      max-width: 650px;
+      margin-bottom: 32px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 9px;
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      padding: 12px 20px;
+      font-weight: 650;
+      transition: transform 0.2s, background 0.2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #07111d;
+      border-color: var(--accent);
+    }
+
+    .btn-secondary {
+      background: var(--surface);
+    }
+
+    /* About */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 55px;
+      align-items: start;
+    }
+
+    .about-text p {
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    .about-panel {
+      background: linear-gradient(
+        145deg, var(--surface), rgba(24, 36, 59, 0.55)
+      );
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 28px;
+    }
+
+    .about-panel h3 {
+      margin-bottom: 18px;
+    }
+
+    .focus-list {
+      list-style: none;
+    }
+
+    .focus-list li {
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+      color: var(--muted);
+    }
+
+    .focus-list li:last-child {
+      border-bottom: none;
+    }
+
+    .focus-list li::before {
+      content: "↗";
+      color: var(--accent);
+      margin-right: 10px;
+    }
+
+    /* Skills */
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .skill-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 26px;
+      transition: transform 0.25s, border-color 0.25s;
+    }
+
+    .skill-card:hover,
+    .project-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(103, 232, 249, 0.5);
+    }
+
+    .skill-icon {
+      font-size: 1.7rem;
+      margin-bottom: 15px;
+    }
+
+    .skill-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .skill-card p {
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    /* Projects */
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+
+    .project-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      min-height: 285px;
+      transition: transform 0.25s, border-color 0.25s;
+    }
+
+    .project-number {
+      color: var(--accent);
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .project-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+    }
+
+    .project-card p {
+      color: var(--muted);
+      flex: 1;
+      margin-bottom: 22px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tag {
+      color: var(--accent);
+      background: rgba(103, 232, 249, 0.07);
+      border: 1px solid rgba(103, 232, 249, 0.15);
+      border-radius: 6px;
+      padding: 4px 9px;
+      font-size: 0.8rem;
+    }
+
+    /* Experience */
+
+    .timeline {
+      border-left: 2px solid var(--border);
+      margin-left: 8px;
+      padding-left: 30px;
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 35px;
+    }
+
+    .timeline-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -38px;
+      top: 8px;
+      width: 12px;
+      height: 12px;
+      background: var(--accent);
+      border-radius: 50%;
+      box-shadow: 0 0 0 5px var(--bg);
+    }
+
+    .timeline-item h3 {
+      font-size: 1.2rem;
+      margin-bottom: 5px;
+    }
+
+    .timeline-item .date {
+      color: var(--accent);
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+
+    .timeline-item p {
+      color: var(--muted);
+      max-width: 700px;
+    }
+
+    /* Contact */
+
+    .contact-box {
+      text-align: center;
+      background: linear-gradient(
+        135deg, var(--surface), #172440
+      );
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 55px 25px;
+    }
+
+    .contact-box h2 {
+      margin-bottom: 18px;
+    }
+
+    .contact-box p {
+      color: var(--muted);
+      max-width: 580px;
+      margin: 0 auto 28px;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 25px 0;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 18px;
+    }
+
+    .footer-links a:hover {
+      color: var(--accent);
+    }
+
+    /* Mobile layout */
+
+    @media (max-width: 760px) {
+      .section {
+        padding: 70px 0;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 74px;
+        left: 0;
+        right: 0;
+        background: var(--surface);
+        padding: 20px 5%;
+        border-bottom: 1px solid var(--border);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .hero {
+        min-height: auto;
+      }
+
+      .hero-content {
+        padding: 90px 0;
+      }
+
+      .hero h1 {
+        letter-spacing: -1.5px;
+      }
+
+      .about-grid,
+      .skills-grid,
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-grid {
+        gap: 28px;
+      }
+
+      .project-card {
+        min-height: 260px;
+      }
+
+      .footer-content {
+        flex-direction: column;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *, *::before, *::after {
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav class="container" aria-label="Main navigation">
+      <a class="logo" href="#home">Ben<span>.</span></a>
+
+      <button class="menu-toggle"
+        id="menu-toggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="nav-links">
+        Menu ☰
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Expertise</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <div class="availability">
+            <span class="status-dot"></span>
+            Educator · Technologist · Lifelong Learner
+          </div>
+
+          <h1>
+            Hi, I'm Ben.<br>
+            I connect <span class="gradient">education</span><br>
+            with technology.
+          </h1>
+
+          <p class="hero-description">
+            I'm a Computer Science and Mathematics educator interested
+            in programming, artificial intelligence, STEAM education,
+            and building technology that makes learning more meaningful.
+          </p>
+
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="#projects">
+              Explore my work ↗
+            </a>
+            <a class="btn btn-secondary" href="#contact">
+              Get in touch
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">A little about me</p>
+          <h2>Teaching, technology<br>and <span class="accent">innovation.</span></h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I am an educator with experience teaching Computer Science
+              and Mathematics in international school settings. My work
+              includes supporting students with different levels of
+              experience and helping them develop their problem-solving
+              and computational thinking skills.
+            </p>
+
+            <p>
+              Beyond the classroom, I enjoy exploring how programming,
+              AI, web development, the Internet of Things, and digital
+              fabrication can create engaging learning experiences.
+            </p>
+
+            <p>
+              I believe technology education should help students
+              understand how things work, think independently, and
+              turn their ideas into practical projects.
+            </p>
+          </div>
+
+          <aside class="about-panel">
+            <h3>Areas I explore</h3>
+            <ul class="focus-list">
+              <li>Computer Science education</li>
+              <li>Programming and web development</li>
+              <li>Artificial intelligence</li>
+              <li>STEAM and project-based learning</li>
+              <li>IoT, CAD and 3D printing</li>
+              <li>Curriculum design and innovation</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">What I work with</p>
+          <h2>My areas of <span class="accent">expertise.</span></h2>
+          <p class="section-intro">
+            A combination of technical knowledge, teaching experience,
+            and creative problem-solving.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <div class="skill-icon" aria-hidden="true">💻</div>
+            <h3>Computer Science</h3>
+            <p>
+              Programming, algorithms, computational thinking,
+              web technologies, and computer science education.
+            </p>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon" aria-hidden="true">🤖</div>
+            <h3>AI and Emerging Tech</h3>
+            <p>
+              Exploring artificial intelligence, machine learning,
+              Python applications, and emerging technologies.
+            </p>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon" aria-hidden="true">🧩</div>
+            <h3>STEAM Education</h3>
+            <p>
+              Design thinking, project-based learning, CAD,
+              3D printing, IoT, and hands-on student projects.
+            </p>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon" aria-hidden="true">📐</div>
+            <h3>Mathematics</h3>
+            <p>
+              Mathematics teaching, logical reasoning,
+              problem-solving, and analytical thinking.
+            </p>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon" aria-hidden="true">🎓</div>
+            <h3>Teaching and Learning</h3>
+            <p>
+              Curriculum planning, differentiated instruction,
+              assessment, and student-centred learning.
+            </p>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon" aria-hidden="true">🚀</div>
+            <h3>Innovation</h3>
+            <p>
+              Turning ideas into practical learning resources,
+              prototypes, and technology-enhanced experiences.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Selected work</p>
+          <h2>Projects and <span class="accent">experiments.</span></h2>
+          <p class="section-intro">
+            A place to showcase the projects I build, the problems
+            I explore, and the ideas I develop.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <span class="project-number">PROJECT 01</span>
+            <h3>AI and Python Experiments</h3>
+            <p>
+              Small Python projects exploring automation, data
+              analysis, artificial intelligence, and practical
+              applications of programming.
+            </p>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">AI</span>
+              <span class="tag">Data</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <span class="project-number">PROJECT 02</span>
+            <h3>Educational Web Applications</h3>
+            <p>
+              Interactive web-based learning resources designed
+              to help students practise concepts and receive
+              clear, useful feedback.
+            </p>
+            <div class="tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <span class="project-number">PROJECT 03</span>
+            <h3>STEAM and IoT Prototypes</h3>
+            <p>
+              Hands-on technology concepts combining programming,
+              electronics, sensors, and design to explore real-world
+              problems.
+            </p>
+            <div class="tags">
+              <span class="tag">IoT</span>
+              <span class="tag">Programming</span>
+              <span class="tag">Prototyping</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <span class="project-number">PROJECT 04</span>
+            <h3>Computer Science Teaching Resources</h3>
+            <p>
+              Structured lessons, coding challenges, revision
+              resources, and scaffolded projects for developing
+              programming skills.
+            </p>
+            <div class="tags">
+              <span class="tag">Education</span>
+              <span class="tag">Curriculum</span>
+              <span class="tag">Problem-solving</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">My journey</p>
+          <h2>Professional <span class="accent">experience.</span></h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <h3>Computer Science and Mathematics Educator</h3>
+            <p class="date">International School Education</p>
+            <p>
+              Teaching Computer Science and Mathematics, developing
+              learning resources, supporting students, and exploring
+              ways to make technical concepts accessible.
+            </p>
+          </article>
+
+          <article class="timeline-item">
+            <h3>Mathematics, ICT and Computer Science</h3>
+            <p class="date">Teaching and Curriculum Development</p>
+            <p>
+              Experience supporting mathematics, physics, ICT,
+              programming, and technology-focused learning activities.
+            </p>
+          </article>
+
+          <article class="timeline-item">
+            <h3>Computer Science and Mathematics</h3>
+            <p class="date">Academic Background</p>
+            <p>
+              A background in Computer Science and Technology,
+              alongside an interest in mathematical reasoning,
+              software development, and applied technology.
+            </p>
+          </article>
+        </div>
+
+        <p class="muted" style="margin-top: 25px; font-size: 0.9rem;">
+          Note: Add your exact school names, job titles, dates,
+          and qualifications before using this section professionally.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-box">
+          <p class="eyebrow">Let's connect</p>
+          <h2>Have an idea worth <span class="accent">building?</span></h2>
+          <p>
+            I'm interested in education, programming, AI, STEAM,
+            and meaningful technology projects. Feel free to explore
+            my work or connect with me professionally.
+          </p>
+
+          <div class="hero-buttons" style="justify-content: center;">
+            <a class="btn btn-primary"
+               href="https://github.com/benben"
+               target="_blank"
+               rel="noopener noreferrer">
+              Visit my GitHub ↗
+            </a>
+
+            <!-- Replace this with your professional email address. -->
+            <a class="btn btn-secondary" href="#contact"
+               id="email-link">
+              Add my email
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <p>© <span id="year"></span> Ben Akbari. Built with curiosity.</p>
+
+      <div class="footer-links">
+        <a href="#home">Back to top ↑</a>
+        <a href="https://github.com/benben"
+           target="_blank"
+           rel="noopener noreferrer">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    menuToggle.addEventListener("click", () => {
+      const isOpen = navLinks.classList.toggle("open");
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+      menuToggle.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation menu" : "Open navigation menu"
+      );
+    });
+
+    navLinks.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open navigation menu");
+      });
+    });
+
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
