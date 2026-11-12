@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000" role="img" aria-label="Profile photo placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#182720"/><stop offset="1" stop-color="#07100c"/></linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.35" r="0.7"><stop offset="0" stop-color="#d9ee83" stop-opacity="0.18"/><stop offset="1" stop-color="#d9ee83" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <rect width="800" height="1000" fill="url(#glow)"/>
+  <g fill="none" stroke="#d9ee83" stroke-opacity="0.22" stroke-width="2"><ellipse cx="400" cy="470" rx="300" ry="190" transform="rotate(-25 400 470)"/><ellipse cx="400" cy="470" rx="340" ry="225" transform="rotate(35 400 470)"/></g>
+  <g fill="#d9ee83" fill-opacity="0.9"><circle cx="400" cy="330" r="88"/><path d="M220 660c12-129 85-205 180-205s168 76 180 205v22H220z"/></g>
+  <text x="400" y="790" text-anchor="middle" fill="#f0f4ec" font-family="Arial, sans-serif" font-size="25" letter-spacing="5">YOUR PHOTO HERE</text>
+  <text x="400" y="830" text-anchor="middle" fill="#b8c8b6" font-family="Arial, sans-serif" font-size="14" letter-spacing="2">REPLACE THE PLACEHOLDER IMAGE</text>
+</svg>
