@@ -931,59 +931,59 @@ window.SCHOOL_LIFE_PHOTOS = [
 
   alt: "Teachers and students participating in school festivals and activities",
 
-  cover: "assets/school-life/Festivals/1.jpeg",
+  cover: "assets/school-life/school-festivals/1.jpeg",
 
   hoverDescription: "I believe teachers' participation in school festivals and activities helps create a positive and supportive school environment. Sharing these experiences with students and colleagues builds stronger relationships, encourages teamwork and creates a greater sense of belonging. A happy and engaged school community makes learning more enjoyable for everyone.",
 
   media: [
     {
       type: "image",
-      src: "assets/school-life/Ffestivals/1.jpeg",
+      src: "assets/school-life/school-festivals/1.jpeg",
       caption: "Celebrating together"
     },
     {
       type: "image",
-      src: "assets/school-life/Ffestivals/2.jpg",
+      src: "assets/school-life/school-festivals/2.jpg",
       caption: "Sharing school experiences"
     },
     {
       type: "image",
-      src: "assets/school-life/Ffestivals/3.jpg",
+      src: "assets/school-life/school-festivals/3.jpg",
       caption: "Building connections"
     },
     {
       type: "image",
-      src: "assets/school-life/Ffestivals/4.jpg",
+      src: "assets/school-life/school-festivals/4.jpg",
       caption: "Teachers and students together"
     },
     {
       type: "image",
-      src: "assets/school-life/Ffestivals/5.jpg",
+      src: "assets/school-life/school-festivals/5.jpg",
       caption: "Enjoying school activities"
     },
     {
       type: "image",
-      src: "assets/school-life/Ffestivals/6.jpg",
+      src: "assets/school-life/school-festivals/6.jpg",
       caption: "Teamwork and participation"
     },
     {
       type: "image",
-      src: "assets/school-life/Ffestivals/7.jpg",
+      src: "assets/school-life/school-festivals/7.jpg",
       caption: "Celebrating school traditions"
     },
     {
       type: "image",
-      src: "assets/school-life/Ffestivals/8.jpg",
+      src: "assets/school-life/school-festivals/8.jpg",
       caption: "Creating happy memories"
     },
     {
       type: "image",
-      src: "assets/school-life/Ffestivals/9.jpg",
+      src: "assets/school-life/school-festivals/9.jpg",
       caption: "A connected school community"
     },
     {
       type: "image",
-      src: "assets/school-life/Ffestivals/10.jpg",
+      src: "assets/school-life/school-festivals/10.jpg",
       caption: "Growing together"
     }
   ]
