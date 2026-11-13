@@ -938,52 +938,52 @@ window.SCHOOL_LIFE_PHOTOS = [
   media: [
     {
       type: "image",
-      src: "assets/school-life/Festivals/1.jpeg",
+      src: "assets/school-life/Ffestivals/1.jpeg",
       caption: "Celebrating together"
     },
     {
       type: "image",
-      src: "assets/school-life/Festivals/2.jpg",
+      src: "assets/school-life/Ffestivals/2.jpg",
       caption: "Sharing school experiences"
     },
     {
       type: "image",
-      src: "assets/school-life/Festivals/3.jpg",
+      src: "assets/school-life/Ffestivals/3.jpg",
       caption: "Building connections"
     },
     {
       type: "image",
-      src: "assets/school-life/Festivals/4.jpg",
+      src: "assets/school-life/Ffestivals/4.jpg",
       caption: "Teachers and students together"
     },
     {
       type: "image",
-      src: "assets/school-life/Festivals/5.jpg",
+      src: "assets/school-life/Ffestivals/5.jpg",
       caption: "Enjoying school activities"
     },
     {
       type: "image",
-      src: "assets/school-life/Festivals/6.jpg",
+      src: "assets/school-life/Ffestivals/6.jpg",
       caption: "Teamwork and participation"
     },
     {
       type: "image",
-      src: "assets/school-life/Festivals/7.jpg",
+      src: "assets/school-life/Ffestivals/7.jpg",
       caption: "Celebrating school traditions"
     },
     {
       type: "image",
-      src: "assets/school-life/Festivals/8.jpg",
+      src: "assets/school-life/Ffestivals/8.jpg",
       caption: "Creating happy memories"
     },
     {
       type: "image",
-      src: "assets/school-life/Festivals/9.jpg",
+      src: "assets/school-life/Ffestivals/9.jpg",
       caption: "A connected school community"
     },
     {
       type: "image",
-      src: "assets/school-life/Festivals/10.jpg",
+      src: "assets/school-life/Ffestivals/10.jpg",
       caption: "Growing together"
     }
   ]
