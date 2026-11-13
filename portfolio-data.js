@@ -877,29 +877,29 @@ window.SCHOOL_LIFE_PHOTOS = [
 
   alt: "Professional learning and teacher development activities",
 
-  cover: "assets/school-life/PD/1.jpg",
+  cover: "assets/school-life/PDs/1.jpg",
 
   hoverDescription: "Professional development plays an important role in maintaining and improving the quality of teaching. It gives educators opportunities to revisit important educational principles, reflect on everyday classroom practices and explore new approaches that may otherwise be overlooked in busy school routines. Through Cambridge programmes, online courses and school-based professional development across different subjects, teachers can exchange ideas, share experiences and learn from one another. Emerging areas such as artificial intelligence and the effective use of technology in the classroom also create valuable opportunities to explore new possibilities for teaching and learning. I believe professional development should go beyond simply attending training sessions. It should encourage reflection, collaboration and the sharing of practical ideas that teachers can bring into their classrooms.",
 
   media: [
     {
       type: "image",
-      src: "assets/school-life/PD/1.jpg",
+      src: "assets/school-life/PDs/1.jpg",
       caption: "Cambridge professional development"
     },
     {
       type: "image",
-      src: "assets/school-life/PD/2.jpg",
+      src: "assets/school-life/PDs/2.jpg",
       caption: "Learning through online professional development"
     },
     {
       type: "image",
-      src: "assets/school-life/PD/3.jpg",
+      src: "assets/school-life/PDs/3.jpg",
       caption: "Sharing ideas and professional practice"
     },
     {
       type: "image",
-      src: "assets/school-life/PD/4.jpeg",
+      src: "assets/school-life/PDs/4.jpeg",
       caption: "Sharing ideas and professional practice"
     }
   ]
