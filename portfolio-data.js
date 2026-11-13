@@ -931,7 +931,7 @@ window.SCHOOL_LIFE_PHOTOS = [
 
   alt: "Teachers and students participating in school festivals and activities",
 
-  cover: "assets/school-life/Festivals/1.jpeg",
+  cover: "assets/school-life/Festivals/i.jpeg",
 
   hoverDescription: "I believe teachers' participation in school festivals and activities helps create a positive and supportive school environment. Sharing these experiences with students and colleagues builds stronger relationships, encourages teamwork and creates a greater sense of belonging. A happy and engaged school community makes learning more enjoyable for everyone.",
 
