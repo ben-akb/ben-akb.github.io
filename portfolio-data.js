@@ -992,5 +992,4 @@ window.SCHOOL_LIFE_PHOTOS = [
 
 
 
-
 ];
