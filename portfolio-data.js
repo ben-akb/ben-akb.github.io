@@ -452,10 +452,9 @@ window.SCHOOL_LIFE_PHOTOS = [
 
   alt: "Teacher celebrating the academic achievements of former students Jack and Max",
 
-  cover: "assets/school-life/student_achievements/cover.jpg",
+  cover: "assets/school-life/jack_oxford/1.png",
 
-  hoverDescription: "One of the most rewarding parts of teaching is seeing students progress towards their ambitions and take the next steps in their academic journeys. I had the opportunity to teach Jack A-Level Computer Science, and it was particularly rewarding to see him progress to the University of Oxford to pursue Electrical Engineering. Max also continued his academic journey in Canada, pursuing Computer Science and Engineering in British Columbia. Their achievements reflect the importance of curiosity, dedication and academic commitment. As teachers, we hope to encourage students to explore their interests, develop their strengths and aim high. Seeing former students move on to exciting opportunities is one of the most meaningful rewards of teaching.",
-
+  hoverDescription: "It is rewarding to see students achieve their ambitions. I had the opportunity to teach Jack A-Level Computer Science before he progressed to the University of Oxford to study Electrical Engineering. Max also continued his studies in British Columbia, Canada, in Computer Science and Engineering. Their journeys remind us of the importance of encouraging students to aim high and pursue their ambitions.",
   media: [
     {
       type: "image",
