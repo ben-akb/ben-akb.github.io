@@ -446,6 +446,32 @@ window.PORTFOLIO_PROJECTS = [
 window.SCHOOL_LIFE_PHOTOS = [
 
 {
+  caption: "Student Journeys – From Our Classroom to the World",
+
+  note: "STUDENT ACHIEVEMENT",
+
+  alt: "Teacher celebrating the academic achievements of former students Jack and Max",
+
+  cover: "assets/school-life/student_achievements/cover.jpg",
+
+  hoverDescription: "One of the most rewarding parts of teaching is seeing students progress towards their ambitions and take the next steps in their academic journeys. I had the opportunity to teach Jack A-Level Computer Science, and it was particularly rewarding to see him progress to the University of Oxford to pursue Electrical Engineering. Max also continued his academic journey in Canada, pursuing Computer Science and Engineering in British Columbia. Their achievements reflect the importance of curiosity, dedication and academic commitment. As teachers, we hope to encourage students to explore their interests, develop their strengths and aim high. Seeing former students move on to exciting opportunities is one of the most meaningful rewards of teaching.",
+
+  media: [
+    {
+      type: "image",
+      src: "assets/school-life/jack_oxford/1.png",
+      alt: "Teacher with former students Jack and Max",
+      caption: "Celebrating Jack and Max's academic achievements"
+    },
+    {
+      type: "video",
+      src: "assets/school-life/jack_oxford/1.mp4",
+      caption: "Jack's academic journey – From A-Level Computer Science to Oxford"
+    }
+  ]
+},,
+
+{
   caption: "Head of Student Development – Student Leadership and School Life",
 
   note: "SCHOOL LEADERSHIP",
@@ -988,6 +1014,9 @@ window.SCHOOL_LIFE_PHOTOS = [
     }
   ]
 },
+
+
+
 
 
 
