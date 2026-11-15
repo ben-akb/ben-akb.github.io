@@ -457,6 +457,12 @@ window.SCHOOL_LIFE_PHOTOS = [
   hoverDescription: "It is rewarding to see students achieve their ambitions. I had the opportunity to teach Jack A-Level Computer Science before he progressed to the University of Oxford to study Electrical Engineering. Max also continued his studies in British Columbia, Canada, in Computer Science and Engineering. Their journeys remind us of the importance of encouraging students to aim high and pursue their ambitions.",
   media: [
     {
+      type: "image",
+      src: "assets/school-life/jack_oxford/1.jpg",
+      alt: "Teacher with former students Jack and Max",
+      caption: "Celebrating Jack and Max's academic achievements"
+    },
+    {
       type: "video",
       src: "assets/school-life/jack_oxford/1.mp4",
       caption: "Jack's academic journey – From A-Level Computer Science to Oxford"
