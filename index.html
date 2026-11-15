@@ -4,6 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0b1210">
+  <meta name="description" content="Ben Akbari — Computer Science and Mathematics educator working across A-Level, AP, IGCSE, STEAM, ICT, AI, and technology-led learning.">
+  <meta name="author" content="Ben Akbari">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ben Akbari — Educator & Technologist">
+  <meta property="og:description" content="Computer Science, Mathematics, STEAM and technology-led education.">
+  <meta property="og:url" content="https://benakbari.com/">
+  <meta property="og:image" content="https://benakbari.com/assets/images/profile-photo.jpg">
+  <meta property="og:image:alt" content="Portrait of Ben Akbari">
+  <link rel="canonical" href="https://benakbari.com/">
   <script>
     try {
       const savedTheme = localStorage.getItem("ben-portfolio-theme");
@@ -14,12 +23,18 @@
       document.documentElement.dataset.theme = "dark";
     }
   </script>
-  <meta name="description" content="Ben Akbari — Computer Science and Mathematics educator working across A-Level, AP, IGCSE, STEAM, ICT, AI, and technology-led learning.">
   <title>Ben Akbari — Educator & Technologist</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <!-- Load Google Fonts without blocking the first page render. If Google Fonts
+       is unavailable, the fallback fonts defined in styles.css are used. -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap"
+    rel="stylesheet"
+    media="print"
+    onload="this.media='all'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  </noscript>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -44,7 +59,6 @@
   <main id="main">
     <section class="hero section-wrap" aria-labelledby="hero-title">
       <div class="hero-copy">
-        
         <h1 id="hero-title">Teaching technology.<br><em>Designing what’s next.</em></h1>
         <p class="hero-intro">I’m Ben, a Computer Science and Mathematics educator connecting rigorous learning with real-world technology, creative problem-solving, and hands-on STEAM.</p>
         <div class="hero-actions">
@@ -54,20 +68,16 @@
         <div class="hero-profile-links" aria-label="Professional profile links">
           <span class="profile-links-label">FIND ME ONLINE</span>
           <a class="profile-link-cv" href="assets/Ben-Akbari-CV.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open Ben Akbari's CV PDF">CV <span aria-hidden="true">↗</span></a>
-          
           <a class="profile-link-album" href="#school-life" aria-label="Open the school life photo album">School Life Album <span aria-hidden="true">↘</span></a>
         </div>
         <div class="hero-meta"><span class="status-dot"></span><span>Currently teaching at King’s College Chengdu Dipont</span></div>
       </div>
       <div class="hero-visual">
         <div class="hero-photo-frame">
-          <img class="hero-photo" id="profilePhoto" src="assets/images/profile-photo.jpg" alt="Portrait of Ben Akbari" fetchpriority="high">
-         
+          <img class="hero-photo" id="profilePhoto" src="assets/images/profile-photo.jpg" alt="Portrait of Ben Akbari" fetchpriority="high" decoding="async">
         </div>
         <div class="orbit orbit-one" aria-hidden="true"></div>
         <div class="orbit orbit-two" aria-hidden="true"></div>
-      
-        
       </div>
       <div class="hero-scroll" aria-hidden="true"><span class="scroll-rule"></span><span>SCROLL TO EXPLORE</span></div>
     </section>
@@ -84,24 +94,19 @@
     </section>
 
     <section class="about section-wrap section-space" id="about" aria-labelledby="about-title">
-      
       <div class="about-grid">
         <div class="about-heading"><h2 id="about-title">Make it clear.<br><em>Make it real.</em></h2></div>
         <div class="about-copy">
           <p class="large-copy">I believe the best learning happens when students can connect an idea to something they can test, build, question, or improve.</p>
           <p>I have more than eight years of experience in international education in China, teaching Cambridge A-Level, IGCSE, and AP courses. My work combines strong subject knowledge with practical, student-centred learning.</p>
           <p>Alongside teaching, I have led student development and technology initiatives, and designed learning experiences in Python, web development, AI, IoT, CAD, and 3D printing. I also contributed to the SSS-1 microsatellite development team during my postgraduate studies in Space Technologies.</p>
-        
         </div>
       </div>
     </section>
 
-
     <section class="subjects section-wrap section-space" id="subjects" aria-labelledby="subjects-title">
-      
       <div class="subjects-heading">
         <div><h2 id="subjects-title">What I teach.<br><em>What students can do.</em></h2></div>
-        
       </div>
       <div class="subjects-grid">
         <article class="subject-card"><span class="subject-number">01</span><h3>Computer Science</h3><p>Cambridge AS & A-Level Computer Science, IGCSE Computer Science, AP Computer Science A, and AP Computer Science Principles.</p><div class="tag-row"><span>Java</span><span>Python</span><span>Algorithms</span></div></article>
@@ -110,8 +115,8 @@
         <article class="subject-card"><span class="subject-number">04</span><h3>STEAM & Emerging Technology</h3><p>STEAM, engineering, robotics, AI, machine learning, IoT, CAD, 3D printing.</p><div class="tag-row"><span>Design thinking</span><span>PBL</span><span>Making</span></div></article>
       </div>
     </section>
+
     <section class="work section-wrap section-space" id="work" aria-labelledby="work-title">
-      
       <div class="section-heading-row"><div><p class="eyebrow">Projects, programmes, and applied learning</p><h2 id="work-title">Ideas into<br><em>real experiences.</em></h2></div><p class="section-aside">A selection of projects and curriculum initiatives connected to my teaching, technology leadership, and postgraduate engineering experience.</p></div>
       <div class="work-grid project-grid" id="projectGrid" aria-live="polite">
         <p class="loading-note">Loading project examples…</p>
@@ -122,16 +127,14 @@
     <section class="video-feature section-wrap" id="video" aria-labelledby="video-title">
       <div class="video-copy"><div class="section-topline"><span>A VISUAL INTRODUCTION</span></div><h2 id="video-title">I believe students learn best<br><em>when they apply what they learn to real-world problems.</em></h2></div>
       <div class="video-frame">
-        <video controls playsinline preload="metadata" poster="assets\videos\Self introduction\poster.jpg" aria-label="Introduction video">
-          <source src="assets/videos/Self introduction/Self introduction video October 2026.mp4" type="video/mp4">
+        <video controls playsinline preload="none" poster="assets/videos/Self%20introduction/poster.jpg" aria-label="Introduction video">
+          <source src="assets/videos/Self%20introduction/Self%20introduction%20video%20October%202026.mp4" type="video/mp4">
           Your browser does not support the video element.
         </video>
-        
       </div>
     </section>
 
     <section class="school-album section-wrap section-space" id="school-life" aria-labelledby="school-life-title">
-      
       <div class="section-heading-row album-heading-row">
         <div><p class="eyebrow">A few moments from school life</p><h2 id="school-life-title">Learning happens<br><em>everywhere.</em></h2></div>
         <p class="section-aside">A growing album of classroom moments, school activities, student projects, and the people who make learning meaningful.</p>
@@ -139,24 +142,21 @@
       <div class="school-album-grid" id="schoolAlbumGrid" aria-live="polite">
         <p class="loading-note">Loading school life album…</p>
       </div>
-      
     </section>
 
     <section class="experience section-wrap section-space" id="experience" aria-labelledby="experience-title">
-      
       <div class="section-heading-row"><div><p class="eyebrow">A growing practice</p><h2 id="experience-title">Experiences<br></h2></div><p class="section-aside"></p></div>
       <div class="timeline">
         <article class="timeline-item timeline-current"><div class="timeline-date"><span class="current-pulse"></span>2025 — PRESENT</div><div class="timeline-main"><h3>Computer Science & Mathematics Educator</h3><p class="timeline-org">King’s College Chengdu Dipont <span>· Chengdu, China</span></p><p>Teach Cambridge AS and A-Level Computer Science, AP Computer Science A and Principles, and advanced Mathematics. Design Junior School STEAM and ICT initiatives, lead engineering- and AI-focused activities, and support students as a House Tutor.</p><div class="timeline-tags"><span>Cambridge</span><span>AP</span><span>STEAM</span><span>Pastoral care</span></div></div></article>
         <article class="timeline-item"><div class="timeline-date">2023 — 2025</div><div class="timeline-main"><h3>Head of Student Development & Computer Science Educator</h3><p class="timeline-org">Guangzhou Singaporean School <span>· Guangzhou, China</span></p><p>Led the Student Development Department, coordinated assemblies and student leadership initiatives, taught A-Level and IGCSE Computer Science and Mathematics, and developed AI, IoT, ICT, and project-based learning experiences.</p><div class="timeline-tags"><span>Department leadership</span><span>Design thinking</span><span>AI / IoT</span></div></div></article>
         <article class="timeline-item"><div class="timeline-date">2021 — 2023</div><div class="timeline-main"><h3>House Master & Computer Science Teacher</h3><p class="timeline-org">Hongwen Confucius School <span>· Chengdu, China</span></p><p>Supported student welfare and academic progress while teaching A-Level and IGCSE Computer Science and Mathematics, Junior School ICT, Python programming, and full-stack web development.</p><div class="timeline-tags"><span>Student wellbeing</span><span>Python</span><span>Web development</span></div></div></article>
         <article class="timeline-item"><div class="timeline-date">2018 — 2021</div><div class="timeline-main"><h3>Head of Technology & Innovation and Science Educator</h3><p class="timeline-org">Everbright School, International Department <span>· Beijing, China</span></p><p>Helped shape the school’s technology strategy, introduced hands-on innovation courses including 3D printing and programming, and taught Cambridge A-Level and IGCSE Mathematics alongside IGCSE Physics.</p><div class="timeline-tags"><span>Technology strategy</span><span>3D printing</span><span>STEM</span></div></div></article>
-        <article class="timeline-item js-reveal is-visible"><div class="timeline-date">2014 — 2017</div><div class="timeline-main"><h3>Mathematics, Programming &amp; Junior Physics Teacher</h3><p>Taught high school Mathematics and programming, as well as Physics at junior secondary level.</p><div class="timeline-tags"><span>Mathematics</span><span>Programming</span><span>Junior Physics</span></div></div></article>
+        <article class="timeline-item"><div class="timeline-date">2014 — 2017</div><div class="timeline-main"><h3>Mathematics, Programming &amp; Junior Physics Teacher</h3><p>Taught high school Mathematics and programming, as well as Physics at junior secondary level.</p><div class="timeline-tags"><span>Mathematics</span><span>Programming</span><span>Junior Physics</span></div></div></article>
       </div>
     </section>
 
     <section class="credentials section-space" id="credentials" aria-labelledby="credentials-title">
       <div class="section-wrap">
-        
         <div class="credentials-grid">
           <div class="credentials-intro"><h2 id="credentials-title">CREDENTIALS<br><em></em></h2><div class="credential-stamp">LEARN <span>↗</span> APPLY <span>↗</span> SHARE</div></div>
           <div class="credential-list">
@@ -170,13 +170,7 @@
     </section>
 
     <section class="recognition section-wrap section-space" aria-labelledby="recognition-title">
-      <div class="recognition-grid"><div><p class="eyebrow">Shared success</p><h2 id="recognition-title"><br><em>RECOGNITION</em></h2></div><div class="recognition-points"><div class="recognition-point"><span class="recognition-icon">↗</span><div><h3>Student competition success</h3><p>Guided students to top positions in Mathematics and Programming competitions in China.</p></div></div><div class="recognition-point"><span class="recognition-icon">✳</span><div><h3>Debate & speech judging</h3><p>Served as a judge, supporting clear reasoning, confident communication, and thoughtful argument.</p></div></div><div class="recognition-point"><span class="recognition-icon">⌘</span><div><h3>Student leadership & community</h3><p>Developed opportunities for student voice, responsibility, collaboration, and personal growth.</p></div></div><div class="recognition-point">
-  <span class="recognition-icon">✦</span>
-  <div>
-    <h3>Coaching & mentoring</h3>
-    <p>Participated in coaching workshops and coached students in extracurricular activities.</p>
-  </div>
-</div></div></div>
+      <div class="recognition-grid"><div><p class="eyebrow">Shared success</p><h2 id="recognition-title"><br><em>RECOGNITION</em></h2></div><div class="recognition-points"><div class="recognition-point"><span class="recognition-icon">↗</span><div><h3>Student competition success</h3><p>Guided students to top positions in Mathematics and Programming competitions in China.</p></div></div><div class="recognition-point"><span class="recognition-icon">✳</span><div><h3>Debate & speech judging</h3><p>Served as a judge, supporting clear reasoning, confident communication, and thoughtful argument.</p></div></div><div class="recognition-point"><span class="recognition-icon">⌘</span><div><h3>Student leadership & community</h3><p>Developed opportunities for student voice, responsibility, collaboration, and personal growth.</p></div></div><div class="recognition-point"><span class="recognition-icon">✦</span><div><h3>Coaching & mentoring</h3><p>Participated in coaching workshops and coached students in extracurricular activities.</p></div></div></div></div>
     </section>
 
     <section class="contact-section" id="contact" aria-labelledby="contact-title">
@@ -184,7 +178,8 @@
     </section>
   </main>
 
-  <footer class="site-footer"><a class="footer-brand" href="#top">BA<span>.</span></a><p>Educator, technologist, and lifelong learner.</p><p class="footer-right">© 2020 Ben Akbari <span class="footer-separator">/</span> Built with curiosity.</p></footer>
+  <footer class="site-footer"><a class="footer-brand" href="#top">BA<span>.</span></a><p>Educator, technologist, and lifelong learner.</p><p class="footer-right">© 2020–<span id="year">2026</span> Ben Akbari <span class="footer-separator">/</span> Built with curiosity.</p></footer>
+
   <dialog class="media-dialog" id="mediaDialog" aria-labelledby="mediaDialogTitle">
     <div class="media-dialog-shell">
       <div class="media-dialog-header">
