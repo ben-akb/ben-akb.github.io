@@ -736,7 +736,7 @@ window.SCHOOL_LIFE_PHOTOS = [
     },
     {
       type: "image",
-      src: "assets/school-life/pi_days/2.jpg",
+      src: "assets/school-life/pi_days/2.jpeg",
       caption: "Exploring mathematical ideas beyond the classroom"
     },
     {
@@ -766,7 +766,7 @@ window.SCHOOL_LIFE_PHOTOS = [
     },
     {
       type: "image",
-      src: "assets/school-life/pi_days/9.jpeg",
+      src: "assets/school-life/pi_days/9.jpg",
       caption: "Learning, experimenting and discovering together"
     }
   ]
