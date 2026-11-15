@@ -705,12 +705,12 @@ window.SCHOOL_LIFE_PHOTOS = [
     },
     {
       type: "image",
-      src: "assets/school-life/Vector_graphics/3.PNG",
+      src: "assets/school-life/Vector_graphics/3.png",
       caption: "Creating original digital artwork"
     },
     {
       type: "image",
-      src: "assets/school-life/Vector_graphics/4.PNG",
+      src: "assets/school-life/Vector_graphics/4.png",
       caption: "Showcasing student vector designs"
     }
   ]
