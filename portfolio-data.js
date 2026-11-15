@@ -458,7 +458,7 @@ window.SCHOOL_LIFE_PHOTOS = [
   media: [
     {
       type: "image",
-      src: "assets/school-life/jack_oxford/1.png",
+      src: "assets/school-life/jack_oxford/1.jpg",
       alt: "Teacher with former students Jack and Max",
       caption: "Celebrating Jack and Max's academic achievements"
     },
