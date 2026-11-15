@@ -311,7 +311,7 @@ window.PORTFOLIO_PROJECTS = [
 
     hoverDescription: "The project introduces object-oriented programming, functions, loops, collision detection and keyboard controls. Students can learn how different programming concepts work together to create an interactive game.",
 
-    cover: "assets/projects/snake_game/Python Snake Game Cover Page.png",
+    cover: "assets/projects/snake_game/1.jpg",
     coverAlt: "Python Snake game developed using Turtle graphics",
 
     media: [
@@ -333,7 +333,7 @@ window.PORTFOLIO_PROJECTS = [
     hoverDescription: "The project demonstrates how Python can create interactive learning applications. Playing the game also helps students recognise US states and remember their geographical locations.",
 
     // Check that this cover filename matches your actual image.
-    cover: "assets/projects/States_of_usa/cover.png",
+    cover: "assets/projects/States_of_usa/cover.jpg",
     coverAlt: "Interactive Python game showing a map of the 50 US states",
 
     media: [
@@ -452,7 +452,7 @@ window.SCHOOL_LIFE_PHOTOS = [
 
   alt: "Teacher celebrating the academic achievements of former students Jack and Max",
 
-  cover: "assets/school-life/jack_oxford/1.png",
+  cover: "assets/school-life/jack_oxford/1.jpg",
 
   hoverDescription: "It is rewarding to see students achieve their ambitions. I had the opportunity to teach Jack A-Level Computer Science before he progressed to the University of Oxford to study Electrical Engineering. Max also continued his studies in British Columbia, Canada, in Computer Science and Engineering. Their journeys remind us of the importance of encouraging students to aim high and pursue their ambitions.",
   media: [
@@ -477,39 +477,39 @@ window.SCHOOL_LIFE_PHOTOS = [
 
   alt: "Student leadership, school assemblies, official visits and student-led activities",
 
-  cover: "assets/school-life/head_of_studentLeaderShip/1.jpeg",
+  cover: "assets/school-life/head_of_studentLeaderShip/1.jpg",
 
   hoverDescription: "During my time as Head of Student Development, I was responsible for coordinating and supporting activities that encouraged students to become more actively involved in school life. My responsibilities included organising weekly assemblies, coordinating student involvement in visits from distinguished guests, including ambassadors and a prime minister, and supporting the Student Council in planning and delivering activities throughout the academic year. Students took active responsibility for preparing official visits, leading school activities and organising events such as the school prom. Through these opportunities, students developed leadership, communication, teamwork and organisational skills. My role focused on coordinating these initiatives, supporting student leaders and creating opportunities for students to contribute to the school community and develop beyond the classroom.",
 
   media: [
     {
       type: "image",
-      src: "assets/school-life/head_of_studentLeaderShip/1.jpeg",
+      src: "assets/school-life/head_of_studentLeaderShip/1.jpg",
       caption: "Student development and school leadership"
     },
     {
       type: "image",
-      src: "assets/school-life/head_of_studentLeaderShip/2.jpeg",
+      src: "assets/school-life/head_of_studentLeaderShip/2.jpg",
       caption: "Organising and leading school assemblies"
     },
     {
       type: "image",
-      src: "assets/school-life/head_of_studentLeaderShip/3.jpeg",
+      src: "assets/school-life/head_of_studentLeaderShip/3.jpg",
       caption: "Preparing students for distinguished guest visits"
     },
     {
       type: "image",
-      src: "assets/school-life/head_of_studentLeaderShip/4.jpeg",
+      src: "assets/school-life/head_of_studentLeaderShip/4.jpg",
       caption: "Encouraging student leadership"
     },
     {
       type: "image",
-      src: "assets/school-life/head_of_studentLeaderShip/5.jpeg",
+      src: "assets/school-life/head_of_studentLeaderShip/5.jpg",
       caption: "Supporting Student Council activities"
     },
     {
       type: "image",
-      src: "assets/school-life/head_of_studentLeaderShip/6.jpeg",
+      src: "assets/school-life/head_of_studentLeaderShip/6.jpg",
       caption: "Building an engaged school community"
     }
   ]
