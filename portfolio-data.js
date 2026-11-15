@@ -812,7 +812,7 @@ window.SCHOOL_LIFE_PHOTOS = [
     },
     {
       type: "image",
-      src: "assets/school-life/Entrepenuership_club/6.PNG",
+      src: "assets/school-life/Entrepenuership_club/6.png",
       caption: "Organising student orders"
     },
     {
